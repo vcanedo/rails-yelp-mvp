@@ -1,0 +1,8 @@
+
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, error: 'Name is mandatory, please specify one' %>
+  <%= f.input :address, error: 'Address is mandatory' %>
+  <%= f.input :phone_number %>
+  <%= f.input :category, hint: 'Can be chinese, italian, japanese, french or belgian', error: 'Category is mandatory' %>
+  <%= f.button :submit, class: 'btn btn-success'%>
+<% end %>

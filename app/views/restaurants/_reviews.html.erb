@@ -1,0 +1,12 @@
+
+<div class="my-4">
+  <h2>Reviews</h2>
+  <ul>
+    <% @restaurant.reviews.each do |review| %>
+      <li>
+        <%= review.rating %> |
+        <%= review.content %>
+      </li>
+    <% end %>
+  </ul>
+</div>
