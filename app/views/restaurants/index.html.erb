@@ -1,9 +1,7 @@
 
-<h1>Restaurants</h1>
-
-<ul class="my-5 text-center align-c">
+<ul class="my-5 text-center" style="align-items:center;">
   <% @restaurants.each do |restaurant| %>
-    <li class="card my-5 p-5" style="width: 40%">
+    <li class="card my-5 p-5" style="width: 30%;">
 
       <h2>
         <%= restaurant.name %>
@@ -11,7 +9,7 @@
 
       <%= restaurant.category %>
 
-      <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+      <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary my-3", style: "align-items:center;width:100px;align-self:center"%>
 
     </li>
   <% end %>
